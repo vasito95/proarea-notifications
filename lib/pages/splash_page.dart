@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'home_page.dart';
-
-import '../constants/app_strings.dart';
-import '../constants/const_assets.dart';
+import 'package:proarea_notifications/constants/app_strings.dart';
+import 'package:proarea_notifications/constants/const_assets.dart';
+import 'package:proarea_notifications/pages/home_page.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
