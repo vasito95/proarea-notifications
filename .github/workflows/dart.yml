@@ -1,10 +1,20 @@
 name: Dart
 
 on:
-  push:
-    branches: ["develop", "production"]
-  pull_request:
-    branches: ["develop", "production"]
+  pull_request:  
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - ready_for_review
+    branches:
+      - 'develop'
+      - 'production'
+    paths-ignore:
+      - '**.md'
+      - 'doc/**'
+      - '.git/'
+      - '.vscode/'
 
 jobs:
   build:
