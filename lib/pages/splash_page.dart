@@ -10,13 +10,12 @@ class SplashPage extends StatefulWidget {
   State<SplashPage> createState() => _SplashPageState();
 }
 
-late double _opacity;
-
 class _SplashPageState extends State<SplashPage> {
+  double _opacity = 0;
+
   @override
   void initState() {
     super.initState();
-    _opacity = 0;
     setOpacity();
     navagateToHome();
   }
